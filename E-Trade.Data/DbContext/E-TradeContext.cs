@@ -1,4 +1,5 @@
-﻿using E_Trade.Data.Models.Identity;
+﻿using E_Trade.Data.Models.Entities;
+using E_Trade.Data.Models.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,5 +17,9 @@ namespace E_Trade.Data.DbContext
         {
             optionsBuilder.UseSqlServer("Server=localhost;Database=ETradeDb;User Id=sa;Password=1234;TrustServerCertificate=true;");
         }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderLine> OrderLines { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
