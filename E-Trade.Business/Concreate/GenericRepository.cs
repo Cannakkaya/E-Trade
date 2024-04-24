@@ -12,10 +12,9 @@ using System.Threading.Tasks;
 
 namespace E_Trade.Business.Concreate
 {
-    public class GenericRepository<Tentity,Tcontext> : IGenericRepository<Tentity>where Tentity: class,new()
-        where Tcontext: IdentityDbContext<AppUser,AppRole,int>,new()
+    public class GenericRepository<Tentity, Tcontext> : IGenericRepository<Tentity> where Tentity : class, new()
+        where Tcontext : IdentityDbContext<AppUser, AppRole, int>, new()
     {
-
         public void Add(Tentity tentity)
         {
             using (var db = new Tcontext())
@@ -27,14 +26,13 @@ namespace E_Trade.Business.Concreate
 
         public void Delete(int id)
         {
-            using (var db =new Tcontext())
+            using (var db = new Tcontext())
             {
-                var tentity=db.Set<Tentity>().Find(id);
+                var tentity = db.Set<Tentity>().Find(id);
                 db.Set<Tentity>().Remove(tentity);
                 db.SaveChanges();
             }
         }
-
         public void Delete(Tentity tentity)
         {
             using (var db = new Tcontext())
@@ -58,6 +56,7 @@ namespace E_Trade.Business.Concreate
             using (var db = new Tcontext())
             {
                 var tentity = db.Set<Tentity>().Find(filter);
+                return tentity;
             }
         }
 
@@ -65,7 +64,7 @@ namespace E_Trade.Business.Concreate
         {
             using (var db = new Tcontext())
             {
-                return filter ==  null ? db.Set<Tentity>().ToList() :
+                return filter == null ? db.Set<Tentity>().ToList() :
                     db.Set<Tentity>().Where(filter).ToList();
             }
         }
@@ -80,3 +79,21 @@ namespace E_Trade.Business.Concreate
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

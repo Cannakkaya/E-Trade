@@ -1,11 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace E_Trade.UI.ViewModels
+namespace E_Trade.Data.Models.ViewModels
 {
-    public class RegisterVM
+    public class RegisterViewModel
     {
         [Required(ErrorMessage = "Name is required")]
- public string Name { get; set; }
+        public string Name { get; set; }
 
         [Required(ErrorMessage = "Surname is required")]
         public string Surname { get; set; }
