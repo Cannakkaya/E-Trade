@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Trade.UI", "E-Trade.UI\E-Trade.UI.csproj", "{394C038C-F916-44BA-9BFB-678505A453C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Trade.UI", "E-Trade.UI\E-Trade.UI.csproj", "{394C038C-F916-44BA-9BFB-678505A453C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Trade.Data", "E-Trade.Data\E-Trade.Data.csproj", "{EF8C06AA-2246-4AB8-BFAE-950CE4912A4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Trade.Data", "E-Trade.Data\E-Trade.Data.csproj", "{EF8C06AA-2246-4AB8-BFAE-950CE4912A4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Trade.DAL", "E-Trade.DAL\E-Trade.DAL.csproj", "{D53EC0B8-ADC0-48F1-B95F-FFF9396AB88A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Trade.DAL", "E-Trade.DAL\E-Trade.DAL.csproj", "{D53EC0B8-ADC0-48F1-B95F-FFF9396AB88A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Trade.Business", "E-Trade.Business\E-Trade.Business.csproj", "{12682D68-0DC0-40D6-809B-E3BCD523C52A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Trade.Business", "E-Trade.Business\E-Trade.Business.csproj", "{12682D68-0DC0-40D6-809B-E3BCD523C52A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Trade-WebAPI", "E-Trade-WebAPI\E-Trade-WebAPI.csproj", "{6B451F8E-8F1C-47BB-B1FE-08CB814EEE30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{12682D68-0DC0-40D6-809B-E3BCD523C52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12682D68-0DC0-40D6-809B-E3BCD523C52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12682D68-0DC0-40D6-809B-E3BCD523C52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B451F8E-8F1C-47BB-B1FE-08CB814EEE30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B451F8E-8F1C-47BB-B1FE-08CB814EEE30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B451F8E-8F1C-47BB-B1FE-08CB814EEE30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B451F8E-8F1C-47BB-B1FE-08CB814EEE30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
